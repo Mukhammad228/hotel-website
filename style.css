@@ -87,7 +87,10 @@ p{
 .py-2{padding: 20px 0;}
 .py-3{padding: 30px 0;}
 
-/*  Navbar */
+.p-1{padding: 10px ;}
+.p-2{padding: 20px ;}
+.p-3{padding: 30px ;}
+/*  Navbar */   
 
 #navbar{
     background: #333;
@@ -203,8 +206,9 @@ p{
 #about-info .info-right img{
     display: block;
     margin: auto;
-    width: 70%;
+    width: 60%;
     border-radius: 50%;
+    height: 100%;
 }
 
 #about-info .info-left{
@@ -215,7 +219,8 @@ p{
 /* Testimonials */
 
 .testimonial img{
-    width: 400px;
+    width: 300px;
+
 }
 
 #testimonals{
@@ -238,10 +243,11 @@ p{
 }
 
 #testimonals .testimonial img{
-    width: 80px;
+    width: 90px;
     float: left;
     margin-right: 20px;
     border-radius: 50%;
+    height: 100%;
 }
 
 /* Contact Form  */
@@ -280,6 +286,16 @@ p{
     background: #444;
     color: #fff;
     padding: 20px;
+}
+
+@media(max-width: 991px){
+    #about-info .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #about-info .info-right img{
+        width: 50%;
+    }
 }
 
 @media(max-width: 768px){
